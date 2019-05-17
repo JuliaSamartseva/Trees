@@ -112,7 +112,7 @@ struct BinarySearchTree {
 		head = balanceBinaryTree_recur(nodes, 0, NodesNumber - 1);
 	}
 
-	Node * balanceBinaryTree_recur(int* nodes, int start, int end) {
+	Node* balanceBinaryTree_recur(int* nodes, int start, int end) {
 		if (start > end)
 			return NULL;
 		int mid = (start + end) / 2;

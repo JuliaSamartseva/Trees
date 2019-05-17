@@ -38,7 +38,7 @@ struct AdjacencyMatrix {
 		std::string word, filename;
 		filename = "file.txt";
 		file.open(filename.c_str());
-		int n;
+		int n = 0;
 		if (file.is_open())
 		{
 			file >> n;
@@ -74,7 +74,7 @@ struct Graph {
 					source = number;
 					i++;
 				}
-				else {
+				else { 
 					destination = number;
 					AddEdge(source, destination);
 					AddEdge(destination, source);
